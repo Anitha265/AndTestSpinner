@@ -3,6 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndPract/TestProj/AndTestSpinner/Androidkotlin/app/src/main/res/layout/activity_grid_view.xml" value="0.14221014492753623" />
+        <entry key="..\:/AndPract/TestProj/AndTestSpinner/Androidkotlin/app/src/main/res/layout/activity_list_view.xml" value="0.15307971014492755" />
+        <entry key="..\:/AndPract/TestProj/AndTestSpinner/Androidkotlin/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/AndPract/TestProj/AndTestSpinner/Androidkotlin/app/src/main/res/layout/activity_main2.xml" value="0.1765625" />
+        <entry key="..\:/AndPract/TestProj/AndTestSpinner/Androidkotlin/app/src/main/res/layout/activity_web_view.xml" value="0.1109375" />
+        <entry key="..\:/AndPract/TestProj/AndTestSpinner/Androidkotlin/app/src/main/res/layout/row.xml" value="0.15307971014492755" />
+        <entry key="..\:/AndPract/TestProj/AndTestSpinner/Androidkotlin/app/src/main/res/layout/test_me.xml" value="0.17255434782608695" />
+        <entry key="..\:/AndPract/TestProj/AndTestSpinner/Androidkotlin/app/src/main/res/layout/toolbar_title_layout.xml" value="0.1" />
         <entry key="..\:/Androidkotlin/app/src/main/res/layout/activity_main.xml" value="0.21" />
         <entry key="..\:/Androidkotlin/app/src/main/res/layout/activity_main2.xml" value="0.16" />
         <entry key="..\:/Androidkotlin/app/src/main/res/layout/spinner_item.xml" value="0.19" />

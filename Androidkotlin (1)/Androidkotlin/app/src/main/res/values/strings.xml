@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LoginScreen</string>
+    <string name="red">RedCheckBox</string>
+    <string name="green">GreenCheckBox</string>
+    <string name="blue">BlueCheckBox</string>
+    <string name="orange">OrangeCheckBox</string>
+
+</resources>
