@@ -6,12 +6,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
+import java.util.ArrayList
 
-class MyAdapter(val context: Context,val arrayList: java.util.ArrayList<MyData>)
+class MyAdapter(val context: Context, val arrayList: ArrayList<MyData>, Images: Array<String>)
     : BaseAdapter() {
      lateinit var id: TextView
      lateinit var name: TextView
      lateinit var mobile: TextView
+
     override fun getCount(): Int {
         return arrayList.size
     }
@@ -24,6 +26,7 @@ class MyAdapter(val context: Context,val arrayList: java.util.ArrayList<MyData>)
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View? {
         var convertView = convertView
         convertView = LayoutInflater.from(context).inflate(R.layout.row, parent, false)
+
         id = convertView!!.findViewById(R.id.id)
         name = convertView.findViewById(R.id.name)
         mobile = convertView.findViewById(R.id.mobile)

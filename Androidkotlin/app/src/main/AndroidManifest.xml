@@ -20,15 +20,15 @@
         <activity
             android:name=".MainActivity2"
             android:exported="false" />
-        <activity
-            android:name=".ListViewActivity"
-            android:exported="true"/>
 
         <activity android:name=".ListActivity"
             android:exported="false"/>
             <activity
                 android:name=".WebViewActivity"
-                android:exported="true" >
+                android:exported="true" />
+                <activity
+                    android:name=".ListViewActivity"
+                    android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

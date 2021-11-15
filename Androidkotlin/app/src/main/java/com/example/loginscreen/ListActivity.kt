@@ -18,18 +18,14 @@ class ListActivity: AppCompatActivity() {
         var serialNumber = findViewById<TextView>(R.id.id)
         var studentName = findViewById<TextView>(R.id.name)
         var mobileNumber = findViewById<TextView>(R.id.mobile)
-         intent = getIntent()
 
-        if(intent != null) {
           id = intent.getIntExtra("num",0)
           name =   intent.getStringExtra("name").toString()
-         mobile = intent.getStringExtra("mobilenumber").toString()
+         mobile = intent.getStringExtra("mobile").toString()
 
             serialNumber.setText("" +id)
             studentName.setText(name)
             mobileNumber.setText(mobile)
 
         }
-
-    }
 }

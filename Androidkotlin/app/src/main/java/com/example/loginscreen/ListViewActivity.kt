@@ -1,28 +1,25 @@
 package com.example.loginscreen
 
-import android.app.ActionBar
-import android.app.ActionBar.DISPLAY_SHOW_CUSTOM
 import android.content.Intent
-import android.graphics.Typeface
-import android.os.Build
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.util.TypedValue
-import android.view.Gravity
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ListView
-import android.widget.TextView
 
 class ListViewActivity : AppCompatActivity() {
 
-    val num: Int = 1
-    val name:String = "Mashu"
-    val mobileNumber = "987576443"
+    var num: Int = 0
+    var name:String = ""
+    var mobile = ""
 
     lateinit var listView: ListView
     var arrayList: ArrayList<MyData> = ArrayList()
     lateinit var adapter: MyAdapter
+
+    var Images = arrayOf("https://i.pinimg.com/originals/61/63/06/6163060a0048b875d224ccbf806b9cba.jpg",
+        "https://i.pinimg.com/originals/61/63/06/6163060a0048b875d224ccbf806b9cba.jpg",
+        "https://i.pinimg.com/originals/61/63/06/6163060a0048b875d224ccbf806b9cba.jpg")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list_view)
@@ -40,19 +37,18 @@ class ListViewActivity : AppCompatActivity() {
                 arrayList.add(MyData(1, " Mashu", "987576443"))
                 arrayList.add(MyData(2, " Azhar", "8787576768"))
                 arrayList.add(MyData(3, " Niyaz", "65757657657"))
-                adapter = MyAdapter(this, arrayList)
+                adapter = MyAdapter(this, arrayList,Images)
                 listView.adapter = adapter
 
         listView.setOnItemClickListener(AdapterView.OnItemClickListener() {
                 adapterView: AdapterView<*>, view1: View, i: Int, l: Long ->
                  val intent = Intent(this,ListActivity::class.java)
-            intent.putExtra("num",num)
-            intent.putExtra("name", name)
-            intent.putExtra("mobileNumber",mobileNumber)
+            intent.putExtra("num",arrayList[i].num)
+            intent.putExtra("name", arrayList[i].name)
+            intent.putExtra("mobile",arrayList[i].mobileNumber)
 
             startActivity(intent)
         })
-
 
         }
 
